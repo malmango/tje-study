@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.js" ></script>
+    <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          var txt = prompt('이름을 입력하세요')
+          var eng = parseInt(prompt('영어 점수를 입력하세요'))
+          var math = parseInt(prompt('수학 점수를 입력하세요'))
+          var kor = parseInt(prompt('국어 점수를 입력하세요'))
+          alert(`${txt}님의 총점은 ${eng+math+kor}점이고 평균은 ${(eng+math+kor)/3}점입니다`)
+        })
+      })
+    </script>
+</head>
+<body>
+    <button class="btn">이름과 영어, 수학, 국어 점수를 입력하면 총점과 평균이 출력돼요</button>
+</body>
+</html>
